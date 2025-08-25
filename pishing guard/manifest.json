@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+  "name": "Real-Time Phishing Guard",
+  "version": "2.1.1",
+  "description": "Flags phishing URLs like bank spoofs, with breakdowns and pros/cons.",
+  "permissions": ["tabs", "storage", "notifications", "activeTab"],
+  "background": { "scripts": ["background.js"] },
+  "browser_action": {
+    "default_title": "Phishing Guard",
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "icons": { "128": "icon.png" },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    "details.html", "details.css", "details.js",
+    "icon.png", "safe-icon.png", "warning-icon.png"
+  ]
+}

@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>URL Analysis Details</title>
+  <link rel="stylesheet" href="details.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> <!-- For icons -->
+</head>
+<body>
+  <header>
+    <i class="fas fa-shield-alt logo"></i>
+    <h2>URL Analysis Details</h2>
+  </header>
+
+  <div class="card summary">
+    <h3>Summary</h3>
+    <p><strong>URL:</strong> <span id="fullUrl" class="mono"></span></p>
+    <p><strong>Risk:</strong> <span id="riskBadge" class="badge">-</span></p>
+    <p><strong>Score:</strong> <span id="score" class="metric">-</span></p>
+  </div>
+
+  <div class="card">
+    <h3>Pros vs Cons</h3>
+    <table id="pc">
+      <tr><th>Pros <i class="fas fa-check-circle"></i></th><th>Cons <i class="fas fa-exclamation-triangle"></i></th></tr>
+      <tr><td id="pros"></td><td id="cons"></td></tr>
+    </table>
+  </div>
+
+  <div class="card">
+    <h3>URL Breakdown</h3>
+    <pre id="urlParts" class="codebox"></pre>
+  </div>
+
+  <div class="card">
+    <h3>Navigation History</h3>
+    <div class="scrollable-history">
+      <ul id="history"></ul>
+    </div>
+  </div>
+
+  <script src="details.js"></script>
+</body>
+</html>

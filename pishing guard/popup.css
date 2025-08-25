@@ -1,0 +1,12 @@
+<!doctype html><html><head>
+<meta charset="utf-8"><title>Guard</title>
+<link rel="stylesheet" href="popup.css"></head><body>
+<div class="wrap">
+  <h3>Real-Time Phishing Guard</h3>
+  <div id="u" class="mono"></div>
+  <div id="b" class="badge">─</div>
+  <ul id="list"></ul>
+  <button id="det">View details</button>
+</div>
+<script src="popup.js"></script>
+</body></html>

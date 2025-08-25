@@ -1,0 +1,45 @@
+body {
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #f5f5f5;
+  color: #333;
+  line-height: 1.5;
+}
+
+header { display: flex; align-items: center; gap: 10px; margin-bottom: 20px; color: #333; }
+.logo { font-size: 24px; color: #007bff; }
+h2, h3, h4 { margin: 0 0 10px; }
+.card { background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); margin-bottom: 20px; }
+.mono { word-break: break-all; font-family: monospace; color: #007bff; }
+.badge { padding: 6px 12px; border-radius: 20px; font-weight: bold; }
+.safe { background: #d4edda; color: #155724; }
+.sus { background: #fff3cd; color: #856404; }
+.high { background: #f8d7da; color: #721c24; }
+.metric { font-size: 24px; font-weight: bold; color: #333; }
+table { width: 100%; border-collapse: collapse; }
+th, td { border: 1px solid #ddd; padding: 10px; text-align: left; }
+th { background: #f8f9fa; }
+.codebox {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 4px;
+  font-family: monospace;
+  white-space: pre-wrap;
+  color: #007bff;
+  max-height: 200px; /* Limit height for scrolling */
+  overflow-y: auto; /* Enable vertical scrolling */
+  border: 1px solid #ddd; /* Subtle border for the scrollable area */
+}
+.scrollable-history {
+  max-height: 300px; /* Limit height for scrolling */
+  overflow-y: auto; /* Enable vertical scrolling */
+  border: 1px solid #ddd; /* Subtle border */
+  border-radius: 4px;
+  padding: 10px;
+  background: #f8f9fa;
+}
+ul { list-style: none; padding: 0; margin: 0; }
+ul li { padding: 10px; border-bottom: 1px solid #ddd; }
+ul li:last-child { border-bottom: none; }
